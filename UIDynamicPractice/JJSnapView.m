@@ -10,12 +10,30 @@
 
 @implementation JJSnapView
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];
+        
+        [self addGestureRecognizer:tap];
+    }
+    return self;
 }
-*/
 
+- (void)tapAction:(UITapGestureRecognizer *)recognizer{
+    
+    [self.animator removeAllBehaviors];
+    
+    CGPoint loc = [recognizer locationInView:self];
+
+    UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.boxV snapToPoint:loc];
+    
+    snap.damping = 0.5;
+    
+    [self.animator addBehavior:snap];
+    
+    
+}
 @end
