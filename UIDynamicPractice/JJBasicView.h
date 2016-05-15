@@ -10,4 +10,8 @@
 
 @interface JJBasicView : UIView
 
+@property (strong,nonatomic) UIImageView *boxV;
+
+@property (strong,nonatomic) UIDynamicAnimator *animator;
+
 @end
