@@ -9,5 +9,5 @@
 #import "JJBasicView.h"
 
 @interface JJAttachmentView : JJBasicView
-
+@property (strong,nonatomic) UIAttachmentBehavior *attachment;
 @end

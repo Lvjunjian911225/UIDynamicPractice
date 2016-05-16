@@ -6,8 +6,8 @@
 //  Copyright © 2016年 joson. All rights reserved.
 //
 
-#import "JJBasicView.h"
+#import "JJAttachmentView.h"
 
-@interface JJSpringView : JJBasicView
+@interface JJSpringView : JJAttachmentView
 
 @end
