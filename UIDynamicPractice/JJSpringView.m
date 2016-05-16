@@ -18,7 +18,7 @@
         
         self.attachment.frequency = 0.5;
         self.attachment.damping = 0.5;
-        
+//
         //监听center的改变
         [self.boxV addObserver:self forKeyPath:@"center" options:NSKeyValueObservingOptionNew context:@"jj"];
         

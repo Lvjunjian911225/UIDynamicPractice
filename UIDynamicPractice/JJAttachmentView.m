@@ -75,7 +75,7 @@
     
     if (recognizer.state == UIGestureRecognizerStateChanged) {
         
-//        self.attachment.anchorPoint = loc;
+        self.attachment.anchorPoint = loc;
         
         self.anchorView.center = loc;
         
