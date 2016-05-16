@@ -30,7 +30,7 @@
 
     UISnapBehavior *snap = [[UISnapBehavior alloc] initWithItem:self.boxV snapToPoint:loc];
     
-    snap.damping = 0.5;
+    snap.damping = 0.0;
     
     [self.animator addBehavior:snap];
     
